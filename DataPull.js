@@ -8,3 +8,8 @@ $.ajax({
         document.getElementById("display_data").innerHTML = ajax.responseText;
     }
 });
+
+$("html").html($("html", response).html());
+
+
+//* DO I NEED A NEW PAGE TO OUTPUT THE DATA?
