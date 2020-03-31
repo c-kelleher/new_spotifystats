@@ -17,7 +17,6 @@ function buttonClick(){
 
     window.location.hash = '';
 
-
     // Set token
     _token = hash.access_token;
     
@@ -27,8 +26,9 @@ function buttonClick(){
     const clientId = '54fa4bad309d441498036c12328e5ad1';
     const redirectUri = 'https://c-kelleher.github.io/new_spotifystats/new_loginpage.html';
     const scopes = ['user-read-private user-read-email playlist-read-collaborative user-top-read playlist-read-private user-follow-read user-read-recently-played user-library-read''];
-    
+                    
     // If there is no token, redirect to Spotify authorization
     if (!_token) {
         window.location = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token&show_dialog=true`;
     }
+}
