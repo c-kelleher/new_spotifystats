@@ -5,6 +5,6 @@ $.ajax({
         'Authorization': 'Bearer ' + access_token
     },
     success: function (data) {
-        document.getElementById("display_data").innerHTML;
+        document.getElementById("display_data").innerHTML = ajax.responseText;
     }
 });
