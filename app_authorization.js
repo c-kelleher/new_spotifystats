@@ -9,7 +9,7 @@
  * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
  */
 
-function buttonClick() {
+
 
     var express = require('express'); // Express web server framework
     var request = require('request'); // "Request" library
@@ -40,6 +40,8 @@ function buttonClick() {
 
     var app = express();
 
+function buttonClick() {
+    
     app.use(express.static(__dirname + '/public'))
        .use(cors())
        .use(cookieParser());
