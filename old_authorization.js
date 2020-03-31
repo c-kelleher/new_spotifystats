@@ -24,7 +24,7 @@ function buttonClick(){
     const authEndpoint = 'https://accounts.spotify.com/authorize';
     
     // Replace with your app's client ID, redirect URI and desired scopes
-    const clientId = '7c147c8e84e24fe6bf606db4ae818288';
+    const clientId = '54fa4bad309d441498036c12328e5ad1';
     const redirectUri = 'http://studentpersonalpages.loyola.edu/cpkelleher/www/SpotifyWebApp/MyStats.html';
     const scopes = ['user-top-read'];
     
