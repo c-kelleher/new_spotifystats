@@ -5,11 +5,9 @@ $.ajax({
         'Authorization': 'Bearer ' + access_token
     },
     success: function (response) {
-        document.getElementById("display_data").innerHTML = ajax.responseText;
+        document.getElementById("login_body").innerHTML = ajax.responseText;
     }
 });
-
-$("html").html($("html", response).html());
 
 
 //* DO I NEED A NEW PAGE TO OUTPUT THE DATA?
