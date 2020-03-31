@@ -1,0 +1,76 @@
+<html>
+    <head>
+        
+        <title>Spotify Listening Stats</title>
+        
+        <!--Font import-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="circularSTD_style.css">
+        
+        <!--Bootstrap import-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!--Personal CSS import-->
+        <link rel="stylesheet" type="text/css" href="landingpage.css">
+        <link rel="stylesheet" type="text/css" href="login_page.css">
+  </head>
+    
+    <body id="landingpage_body">
+    <div class="nav_header_combined_login">
+        
+        <!--Nav Bar section... Uses significant bootstrap terms relating to Navbar-->
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="landingPage.html">MyListeningStats</a>
+                <div class="collapse navbar-collapse navbar-right" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="aboutUs.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.spotify.com" class="nav-link">Official Spotify Website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login_page.html" class="nav-link">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container" id="info_container">
+            <div class="block-center text-center">
+                <button class="button" id="login_button" onclick="buttonClick()">Login</button>
+            </div>
+
+            <div class="text-center block-center">
+                <p class="text-center" id="login_disclaimer">After clicking "Login" you will be redirected to Spotify's login to approve the sharing of your listening data. This is done using the officially Spotify Web API and your data will not be shared.</p>
+            </div>
+        </div>
+<!--   POTENTIALLY ADD ICONS
+        <div class="row" id="icons">
+            <div class="col-md-4"><img src="artisticon_black.png"></div>
+            <div class="col-md-4"><img src="graphicon_black.png"></div>
+            <div class="col-md-4"><img src="trackicon_black.png"></div>
+        </div>
+-->
+        
+    </div>    
+        <footer>
+            <center>
+                <p>All data pulled using Spotify Web API.</p>
+            </center>
+        </footer>    
+        
+    <!--Bootstrap JS + JQuery import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    <script src="authorization_test.js"></script>
+    
+   
+        
+    </body>
+
+</html>
