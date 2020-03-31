@@ -4,7 +4,7 @@ $.ajax({
     headers: {
         'Authorization': 'Bearer ' + access_token
     },
-    success: function (data) {
+    success: function (response) {
         document.getElementById("display_data").innerHTML = ajax.responseText;
     }
 });
