@@ -11,37 +11,35 @@
 
 
 
-    var express = require('express'); // Express web server framework
-    var request = require('request'); // "Request" library
-    var cors = require('cors');
-    var querystring = require('querystring');
-    var cookieParser = require('cookie-parser');
+var express = require('express'); // Express web server framework
+var request = require('request'); // "Request" library
+var cors = require('cors');
+var querystring = require('querystring');
+var cookieParser = require('cookie-parser');
 
-    var client_id = '54fa4bad309d441498036c12328e5ad1'; // Your client id
-    var client_secret = 'e841be769ac14d48a7c64d97d017686f'; // Your secret MAY HAVE TO RESET SOMETIMES
-    var redirect_uri = 'http://c-kelleher.github.io/new_spotifystats/'; // Your redirect uri CHANGE THIS TO HOSTED SITE
+var client_id = '54fa4bad309d441498036c12328e5ad1'; // Your client id
+var client_secret = 'e841be769ac14d48a7c64d97d017686f'; // Your secret MAY HAVE TO RESET SOMETIMES
+var redirect_uri = 'http://c-kelleher.github.io/new_spotifystats/'; // Your redirect uri CHANGE THIS TO HOSTED SITE
 
-    /**
-     * Generates a random string containing numbers and letters
-     * @param  {number} length The length of the string
-     * @return {string} The generated string
-     */
-    var generateRandomString = function(length) {
-      var text = '';
-      var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+/**
+ * Generates a random string containing numbers and letters
+ * @param  {number} length The length of the string
+ * @return {string} The generated string
+ */
+var generateRandomString = function(length) {
+  var text = '';
+  var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-      for (var i = 0; i < length; i++) {
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-      }
-      return text;
-    };
+  for (var i = 0; i < length; i++) {
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  }
+  return text;
+};
 
-    var stateKey = 'spotify_auth_state';
+var stateKey = 'spotify_auth_state';
 
-    var app = express();
+var app = express();
 
-function buttonClick() {
-    
     app.use(express.static(__dirname + '/public'))
        .use(cors())
        .use(cookieParser());
@@ -147,4 +145,3 @@ function buttonClick() {
         }
       });
     });
-}
