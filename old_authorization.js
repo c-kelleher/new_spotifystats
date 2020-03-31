@@ -25,7 +25,7 @@ function buttonClick(){
     
     // Replace with your app's client ID, redirect URI and desired scopes
     const clientId = '54fa4bad309d441498036c12328e5ad1';
-    const redirectUri = 'http://studentpersonalpages.loyola.edu/cpkelleher/www/SpotifyWebApp/MyStats.html';
+    const redirectUri = 'https://c-kelleher.github.io/new_spotifystats/new_loginpage.html';
     const scopes = ['user-top-read'];
     
     // If there is no token, redirect to Spotify authorization
